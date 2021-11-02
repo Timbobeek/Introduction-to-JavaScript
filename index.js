@@ -266,9 +266,19 @@ Using the annoyingSong function below do the following:
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+// let number = '';
+// let numberLeftOver = number - 1;
+
+function annoyingSong(number){
+  for (let counter = number; counter > 0; counter--) {
+      let numberLeft = counter - 1;
+      return counter + " bottles of soda on the wall, " + counter + " bottles of soda, take one down pass it around " + numberLeft + " bottles of soda on the wall";
+    }
+  // {return counter + "bottles of soda on the wall," + counter + "bottles of soda, take one down pass it around" + counter - 1 + "bottles of soda on the wall";}
 }
+
+// annoyingSong(6);
+console.log(annoyingSong(0));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
