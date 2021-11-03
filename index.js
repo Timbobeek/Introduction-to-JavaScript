@@ -278,7 +278,7 @@ function annoyingSong(number){
 }
 
 // annoyingSong(6);
-console.log(annoyingSong(0));
+console.log(annoyingSong(6));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -316,12 +316,6 @@ console.log(grade(100));
 
 
 
-
-
-
-
-
-
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
@@ -335,10 +329,34 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+// function vowelCounter(string) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+  
+//   let counter = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     for (let x = 0; x < vowels.length; x++) {
+//       if (string[i] === vowels[x]) {
+//         counter++;
+//       }
+//     }
+//   }
+//   return counter;
+// }
+
+
+function vowelCounter(string) {
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+  let counter = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i].toLowerCase())) {
+        counter++;
+    }
+  }
+  return counter;
 }
 
+console.log(vowelCounter('oaAa'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
